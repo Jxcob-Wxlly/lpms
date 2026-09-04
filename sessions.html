@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPMS - Sessions &amp; Attendance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">LPMS &mdash; READ Educational Trust</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Log Out</a>
+    </nav>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="schools.html">Schools</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="learners.html">Learners</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="sessions.html" class="active">Sessions &amp; Attendance</a>
+      <a href="resources.html">Resources</a>
+      <a href="reports.html">Reports</a>
+    </aside>
+
+    <main class="main-content">
+      <h1 style="color:var(--navy); margin-bottom:16px;">Record Attendance &mdash; Session #14</h1>
+
+      <div class="card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="session-select">Programme / School / Teacher</label>
+            <select id="session-select">
+              <option>Literacy Boost &mdash; Soweto Primary &mdash; Nomsa Zulu</option>
+              <option>Phonics First &mdash; Tembisa High &mdash; Themba Nkosi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="session-date">Date</label>
+            <input type="date" id="session-date" value="2026-09-03">
+          </div>
+        </div>
+      </div>
+
+      <form id="attendance-form" class="card">
+        <table>
+          <thead>
+            <tr><th>Learner</th><th>Present</th><th>Absent</th></tr>
+          </thead>
+          <tbody id="attendance-list">
+            <tr>
+              <td>Sipho Mthembu</td>
+              <td><input type="radio" name="att-1" value="present" checked></td>
+              <td><input type="radio" name="att-1" value="absent"></td>
+            </tr>
+            <tr>
+              <td>Ayanda Mokoena</td>
+              <td><input type="radio" name="att-2" value="present"></td>
+              <td><input type="radio" name="att-2" value="absent" checked></td>
+            </tr>
+            <tr>
+              <td>Lethabo Sithole</td>
+              <td><input type="radio" name="att-3" value="present" checked></td>
+              <td><input type="radio" name="att-3" value="absent"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary" style="margin-top:16px;">Save Attendance</button>
+      </form>
+    </main>
+  </div>
+
+  <footer>Literacy Programme Management System &middot; Team Point Blank</footer>
+
+  <script src="js/sessions.js"></script>
+</body>
+</html>

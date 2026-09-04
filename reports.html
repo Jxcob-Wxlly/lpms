@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPMS - Reports</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">LPMS &mdash; READ Educational Trust</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Log Out</a>
+    </nav>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="schools.html">Schools</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="learners.html">Learners</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="sessions.html">Sessions &amp; Attendance</a>
+      <a href="resources.html">Resources</a>
+      <a href="reports.html" class="active">Reports</a>
+    </aside>
+
+    <main class="main-content">
+      <h1 style="color:var(--navy); margin-bottom:16px;">Reports</h1>
+
+      <div class="card-grid">
+        <div class="card">
+          <strong>Programme Activity Report</strong>
+          <p style="font-size:0.85rem; margin:8px 0;">Sessions, attendance, and totals per programme and school.</p>
+          <button class="btn btn-primary" id="btn-programme-report">View &amp; Export PDF</button>
+        </div>
+        <div class="card">
+          <strong>Learner Progress Report</strong>
+          <p style="font-size:0.85rem; margin:8px 0;">Assessment scores over time, filterable by school, teacher, or grade.</p>
+          <button class="btn btn-primary" id="btn-progress-report">View &amp; Export PDF</button>
+        </div>
+        <div class="card">
+          <strong>Resource Allocation Report</strong>
+          <p style="font-size:0.85rem; margin:8px 0;">Resource allocations listed by school.</p>
+          <button class="btn btn-primary" id="btn-resource-report">View &amp; Export PDF</button>
+        </div>
+        <div class="card">
+          <strong>School Summary Report</strong>
+          <p style="font-size:0.85rem; margin:8px 0;">Overview of schools, teachers, learners, and sessions.</p>
+          <button class="btn btn-primary" id="btn-summary-report">View &amp; Export PDF</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>Literacy Programme Management System &middot; Team Point Blank</footer>
+
+  <script src="js/reports.js"></script>
+</body>
+</html>

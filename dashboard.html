@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPMS - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">LPMS &mdash; READ Educational Trust</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Log Out</a>
+    </nav>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="schools.html">Schools</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="learners.html">Learners</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="sessions.html">Sessions &amp; Attendance</a>
+      <a href="resources.html">Resources</a>
+      <a href="reports.html">Reports</a>
+    </aside>
+
+    <main class="main-content">
+      <h1 style="color:var(--navy); margin-bottom:16px;">Dashboard &mdash; Coordinator</h1>
+
+      <div class="card-grid">
+        <div class="card">
+          <strong>Total Schools</strong>
+          <p style="font-size:1.6rem; color:var(--teal); margin-top:6px;">12</p>
+        </div>
+        <div class="card">
+          <strong>Sessions This Week</strong>
+          <p style="font-size:1.6rem; color:var(--teal); margin-top:6px;">34</p>
+        </div>
+        <div class="card">
+          <strong>Active Learners</strong>
+          <p style="font-size:1.6rem; color:var(--teal); margin-top:6px;">248</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Recent Programme Activity</strong>
+        <table style="margin-top:12px;">
+          <thead>
+            <tr><th>Programme</th><th>School</th><th>Teacher</th><th>Date</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Literacy Boost</td><td>Soweto Primary</td><td>Nomsa Zulu</td><td>2026-03-05</td></tr>
+            <tr><td>Phonics First</td><td>Tembisa High</td><td>Themba Nkosi</td><td>2026-03-06</td></tr>
+            <tr><td>Read Aloud</td><td>Alex Academy</td><td>Lindiwe Dube</td><td>2026-03-07</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <footer>Literacy Programme Management System &middot; Team Point Blank</footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

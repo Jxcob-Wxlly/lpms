@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPMS - Teachers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">LPMS &mdash; READ Educational Trust</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Log Out</a>
+    </nav>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="schools.html">Schools</a>
+      <a href="teachers.html" class="active">Teachers</a>
+      <a href="learners.html">Learners</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="sessions.html">Sessions &amp; Attendance</a>
+      <a href="resources.html">Resources</a>
+      <a href="reports.html">Reports</a>
+    </aside>
+
+    <main class="main-content">
+      <h1 style="color:var(--navy); margin-bottom:16px;">Register New Teacher</h1>
+
+      <form id="teacher-form" class="card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" maxlength="50" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" maxlength="50" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="teacher-school">School</label>
+          <select id="teacher-school" required>
+            <option value="">Select school</option>
+            <option>Soweto Primary</option>
+            <option>Tembisa High</option>
+            <option>Alex Academy</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="teacher-email">Contact Email</label>
+            <input type="email" id="teacher-email" maxlength="100" required>
+          </div>
+          <div class="form-group">
+            <label for="teacher-number">Contact Number (optional)</label>
+            <input type="tel" id="teacher-number" maxlength="15">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Teacher</button>
+        <button type="reset" class="btn btn-secondary">Cancel</button>
+      </form>
+
+      <h2 style="color:var(--navy); margin:24px 0 12px;">Registered Teachers</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Name</th><th>School</th><th>Contact Email</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Nomsa Zulu</td><td>Soweto Primary</td><td>nomsa.zulu@read.org.za</td></tr>
+            <tr><td>Themba Nkosi</td><td>Tembisa High</td><td>themba.nkosi@read.org.za</td></tr>
+            <tr><td>Lindiwe Dube</td><td>Soweto Primary</td><td>lindiwe.dube@read.org.za</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <footer>Literacy Programme Management System &middot; Team Point Blank</footer>
+
+  <script src="js/teachers.js"></script>
+</body>
+</html>

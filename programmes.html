@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPMS - Programmes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand">LPMS &mdash; READ Educational Trust</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Log Out</a>
+    </nav>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="schools.html">Schools</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="learners.html">Learners</a>
+      <a href="programmes.html" class="active">Programmes</a>
+      <a href="sessions.html">Sessions &amp; Attendance</a>
+      <a href="resources.html">Resources</a>
+      <a href="reports.html">Reports</a>
+    </aside>
+
+    <main class="main-content">
+      <h1 style="color:var(--navy); margin-bottom:16px;">Programmes</h1>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Programme</th><th>Description</th><th>Start Date</th><th>End Date</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Literacy Boost</td><td>Foundation phase literacy</td><td>2026-02-01</td><td>2026-11-30</td></tr>
+            <tr><td>Read Aloud</td><td>Oral reading programme</td><td>2026-03-01</td><td>2026-09-30</td></tr>
+            <tr><td>Phonics First</td><td>Phonics-based intervention</td><td>2026-01-15</td><td>2026-07-31</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 style="color:var(--navy); margin:24px 0 12px;">Schedule a Session</h2>
+      <form id="programme-form" class="card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prog-select">Programme</label>
+            <select id="prog-select" required>
+              <option>Literacy Boost</option>
+              <option>Read Aloud</option>
+              <option>Phonics First</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="prog-school">School</label>
+            <select id="prog-school" required>
+              <option>Soweto Primary</option>
+              <option>Tembisa High</option>
+              <option>Alex Academy</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prog-date">Session Date</label>
+            <input type="date" id="prog-date" required>
+          </div>
+          <div class="form-group">
+            <label for="prog-start">Start Time</label>
+            <input type="time" id="prog-start" required>
+          </div>
+          <div class="form-group">
+            <label for="prog-end">End Time</label>
+            <input type="time" id="prog-end" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Schedule Session</button>
+      </form>
+    </main>
+  </div>
+
+  <footer>Literacy Programme Management System &middot; Team Point Blank</footer>
+
+  <script src="js/programmes.js"></script>
+</body>
+</html>
