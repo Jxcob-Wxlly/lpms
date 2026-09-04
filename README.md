@@ -1,6 +1,6 @@
 # literacy-programme-management-system
 
-Literacy Programme Management System (LPMS) &mdash; a centralised web platform for **READ Educational Trust**, built for XISD5319 (Work Integrated Learning 3A) and continued into XISD6329.
+Literacy Programme Management System (LPMS); a centralised web platform for **READ Educational Trust**, built for XISD5319 (Work Integrated Learning 3A) and continued into XISD6329.
 
 ## Project Background
 
@@ -43,7 +43,7 @@ All folder and file names use lowercase, hyphen-separated naming with no spaces 
 
 ## Running Locally
 
-This is a static front-end prototype &mdash; no build step required.
+This is a static front-end prototype; no build step required.
 
 1. Clone the repository.
 2. Open `index.html` in a browser, **or** serve the folder with a simple local server, e.g.:
